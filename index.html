@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pure Talent | Chat Bot </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Loader -->
+<div id="loader">
+  <div class="spinner"></div>
+</div>
+
+<div class="chat-app hidden">
+
+  <!-- Header -->
+  <div class="chat-header">
+    <img src="logo.png" class="logo" alt="Logo">
+    <div class="header-info">
+      <div class="company">Smart Mall</div>
+      <div class="status">Online</div>
+    </div>
+
+    <select id="langSwitch" onchange="changeLanguage(this.value)">
+      <option value="en">EN</option>
+      <option value="hi">HI</option>
+      <option value="ne">NE</option>
+      <option value="ta">TA</option>
+    </select>
+  </div>
+
+  <!-- Chat -->
+  <div id="chat-box"></div>
+
+  <!-- Quick Questions -->
+  <div id="quick-questions"></div>
+
+  <!-- Input -->
+  <div class="input-area">
+    <input id="userInput" placeholder="Type a message">
+    <button onclick="sendMessage()">➤</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
