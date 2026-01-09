@@ -253,6 +253,7 @@ window.onload = () => {
 };
 
 
+/* ================= CHAT ================= */
 function addMessage(text, type) {
   const div = document.createElement("div");
   div.className = `msg ${type}`;
@@ -286,12 +287,13 @@ function sendMessage() {
   showForm(text);
 }
 
+/* ================= FORM (WITH VALIDATION) ================= */
 function showForm(questionText = "") {
   const form = document.createElement("div");
   form.className = "form-card";
 
   form.innerHTML = `
-    <textarea>${questionText}</textarea>
+    <textarea placeholder="${content[currentLang].form.question}">${questionText}</textarea>
     <input placeholder="${content[currentLang].form.name}">
     <input placeholder="${content[currentLang].form.phone}">
     <input placeholder="${content[currentLang].form.id}">
@@ -301,20 +303,39 @@ function showForm(questionText = "") {
 
   form.querySelector("button").onclick = () => {
     const fields = form.querySelectorAll("textarea, input");
+
+    const question = fields[0].value.trim();
+    const name = fields[1].value.trim();
+    const phone = fields[2].value.trim();
+    const id = fields[3].value.trim();
+    const mall = fields[4].value.trim();
+
+    // ✅ تحقق من اكتمال البيانات
+    if (!question || !name || !phone || !id || !mall) {
+      alert("⚠️ Please fill all fields");
+      return;
+    }
+
+    // ✅ تحقق من رقم الهوية الإماراتية
+    const emiratesIdRegex = /^784-\d{11}-\d$/;
+    if (!emiratesIdRegex.test(id)) {
+      alert("⚠️ Invalid Emirates ID\nExample: 784-19816056149-3");
+      return;
+    }
+
     const payload = {
-      question: fields[0].value,
-      name: fields[1].value,
-      phone: fields[2].value,
-      id: fields[3].value,
-      mall: fields[4].value,
+      question,
+      name,
+      phone,
+      id,
+      mall,
       language: currentLang
     };
 
-fetch(sheetURL, {
-  method: "POST",
-  body: JSON.stringify(payload)
-});
-
+    fetch(sheetURL, {
+      method: "POST",
+      body: JSON.stringify(payload)
+    });
 
     form.remove();
     addMessage(content[currentLang].thanks, "bot");
@@ -324,38 +345,26 @@ fetch(sheetURL, {
   chatBox.scrollTop = chatBox.scrollHeight;
 }
 
+/* ================= LANGUAGE ================= */
 function changeLanguage(lang) {
   currentLang = lang;
-
-  // 1️⃣ مسح المحادثة
   chatBox.innerHTML = "";
-
-  // 2️⃣ مسح الأسئلة السريعة
   quickBox.innerHTML = "";
-
-  // 3️⃣ مسح أي نص مكتوب
   input.value = "";
-
-  // 4️⃣ إعادة رسالة الترحيب
   addMessage(content[currentLang].welcome, "bot");
-
-  // 5️⃣ إعادة تحميل الأسئلة
   loadQuickQuestions();
 }
 
+/* ================= INIT ================= */
 window.addEventListener("load", () => {
-  try {
-    setTimeout(() => {
-      const loader = document.getElementById("loader");
-      const app = document.querySelector(".chat-app");
+  setTimeout(() => {
+    const loader = document.getElementById("loader");
+    const app = document.querySelector(".chat-app");
 
-      if (loader) loader.style.display = "none";
-      if (app) app.classList.remove("hidden");
+    if (loader) loader.style.display = "none";
+    if (app) app.classList.remove("hidden");
 
-      addMessage(content[currentLang].welcome, "bot");
-      loadQuickQuestions();
-    }, 800);
-  } catch (e) {
-    console.error("Loader error:", e);
-  }
+    addMessage(content[currentLang].welcome, "bot");
+    loadQuickQuestions();
+  }, 800);
 });
