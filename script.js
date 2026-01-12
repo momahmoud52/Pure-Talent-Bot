@@ -18,21 +18,32 @@ const content = {
       extraLeave: "➕ Extra Leave Policy",
       other: "❓ Other Question"
     },
-    replies: {
-      timing: "Working hours are decided by your store manager.",
-      holidays: "Weekly holiday is one day, decided by the team leader.",
-      annualLeave:
-        "You are entitled to 60 days of annual leave after completing two years of service.",
-      absence:
-        "One day of absence is counted as three days in company records.",
-      warnings: "After three warnings, the employee will be terminated.",
-      rules:
-        "Alcohol consumption in accommodation is not allowed. Creating problems with others is not allowed. Coming late to work is not allowed; otherwise, 500 AED will be deducted.",
-      location:
-        "Work location can be anywhere within the United Arab Emirates.",
-      extraLeave:
-        "Any leave exceeding 60 days will be calculated and deducted from salary or from your next leave if you continue working."
-    },
+replies: {
+  timing:
+    "Working hours are determined by the Store Manager in accordance with operational requirements.",
+
+  holidays:
+    "Employees are entitled to one weekly day off, scheduled and approved by the Team Leader.",
+
+  annualLeave:
+    "Employees become eligible for 60 days of annual leave upon completion of two (2) full years of continuous service.",
+
+  absence:
+    "Any single day of unauthorized absence will be recorded as three (3) days in the company attendance records.",
+
+  warnings:
+    "An employee will be subject to termination upon receiving three (3) official warnings.",
+
+  rules:
+    "Consumption of alcohol within company-provided accommodation is strictly prohibited. Any violation related to alcohol consumption will result in a penalty of AED 500. Creating disturbances or conflicts with others, as well as repeated late attendance, is not permitted and may lead to disciplinary action in accordance with company policy.",
+
+  location:
+    "The employee may be assigned to work at any location within the United Arab Emirates based on business needs.",
+
+  extraLeave:
+    "Any annual leave exceeding 60 days will be calculated and deducted from the employee’s salary or adjusted against the next eligible leave period, subject to continued employment."
+},
+
     form: {
       question: "Your Question",
       name: "Your Name",
@@ -57,22 +68,31 @@ const content = {
       extraLeave: "➕ अतिरिक्त अवकाश नीति",
       other: "❓ अन्य प्रश्न"
     },
-    replies: {
-      timing: "कार्य समय आपके स्टोर मैनेजर द्वारा तय किया जाता है।",
-      holidays:
-        "साप्ताहिक अवकाश एक दिन का होता है, जो टीम लीडर तय करता है।",
-      annualLeave:
-        "दो साल की सेवा पूरी करने के बाद 60 दिन का वार्षिक अवकाश मिलता है।",
-      absence:
-        "एक दिन की अनुपस्थिति को कंपनी में तीन दिन माना जाता है।",
-      warnings: "तीन चेतावनियों के बाद नौकरी से निकाल दिया जाएगा।",
-      rules:
-        "आवास में शराब पीना मना है। दूसरों से झगड़ा करना मना है। देर से आने पर 500 दिरहम काटे जाएंगे।",
-      location:
-        "कार्य स्थान संयुक्त अरब अमीरात में कहीं भी हो सकता है।",
-      extraLeave:
-        "60 दिनों से अधिक की छुट्टी वेतन से या अगली छुट्टी से काटी जाएगी।"
-    },
+replies: {
+  timing:
+    "कार्य समय परिचालन आवश्यकताओं के अनुसार स्टोर मैनेजर द्वारा निर्धारित किया जाता है।",
+
+  holidays:
+    "कर्मचारी को प्रति सप्ताह एक (1) अवकाश का अधिकार होगा, जिसे टीम लीडर द्वारा निर्धारित और अनुमोदित किया जाएगा।",
+
+  annualLeave:
+    "लगातार दो (2) वर्ष की सेवा पूरी करने के बाद कर्मचारी 60 दिनों के वार्षिक अवकाश का पात्र होगा।",
+
+  absence:
+    "किसी भी एक दिन की अनधिकृत अनुपस्थिति को कंपनी के रिकॉर्ड में तीन (3) दिनों के रूप में दर्ज किया जाएगा।",
+
+  warnings:
+    "तीन (3) आधिकारिक चेतावनियाँ प्राप्त होने पर कर्मचारी की सेवा समाप्त कर दी जाएगी।",
+
+  rules:
+    "कंपनी द्वारा प्रदान किए गए आवास में शराब का सेवन सख्त रूप से प्रतिबंधित है। शराब से संबंधित किसी भी उल्लंघन पर 500 दिरहम का जुर्माना लगाया जाएगा। दूसरों के साथ विवाद उत्पन्न करना या कार्यस्थल पर अनुशासनहीन व्यवहार करना स्वीकार्य नहीं है और इसके विरुद्ध कंपनी नीति के अनुसार अनुशासनात्मक कार्रवाई की जा सकती है।",
+
+  location:
+    "व्यावसायिक आवश्यकताओं के अनुसार कर्मचारी को संयुक्त अरब अमीरात के भीतर किसी भी स्थान पर कार्य के लिए नियुक्त किया जा सकता है।",
+
+  extraLeave:
+    "60 दिनों से अधिक ली गई किसी भी छुट्टी की गणना कर्मचारी के वेतन से की जाएगी या निरंतर सेवा की स्थिति में अगली पात्र छुट्टी से समायोजित की जाएगी।"
+},
     form: {
       question: "आपका प्रश्न",
       name: "नाम",
@@ -97,23 +117,31 @@ const content = {
       extraLeave: "➕ अतिरिक्त बिदा नीति",
       other: "❓ अन्य प्रश्न"
     },
-   replies: {
-      timing: "काम गर्ने समय तपाईंको स्टोर म्यानेजरले निर्धारण गर्छ।",
-      holidays:
-        "साप्ताहिक बिदा एक दिनको हुन्छ, जुन टिम लिडरले तोक्छ।",
-      annualLeave:
-        "दुई वर्ष काम गरेपछि ६० दिन वार्षिक बिदा पाइन्छ।",
-      absence:
-        "एक दिन अनुपस्थित भएमा कम्पनीमा तीन दिन गनिन्छ।",
-      warnings:
-        "तीन पटक चेतावनी पाएपछि कामबाट निकालिन्छ।",
-      rules:
-        "आवासमा मदिरा सेवन गर्न पाइँदैन। अरूसँग झगडा गर्न पाइँदैन। ढिलो आएमा ५०० दिरहम कटौती हुन्छ।",
-      location:
-        "काम गर्ने स्थान संयुक्त अरब इमिरेट्सभित्र कहीं पनि हुन सक्छ।",
-      extraLeave:
-        "६० दिनभन्दा बढी बिदा भएमा तलबबाट वा अर्को बिदाबाट कटौती गरिन्छ।"
-    },
+replies: {
+  timing:
+    "कार्य सञ्चालन आवश्यकताअनुसार काम गर्ने समय स्टोर म्यानेजरद्वारा निर्धारण गरिन्छ।",
+
+  holidays:
+    "कर्मचारीलाई साप्ताहिक रूपमा एक (१) दिनको बिदा प्रदान गरिनेछ, जुन टिम लिडरद्वारा तोक्ने र अनुमोदन गरिनेछ।",
+
+  annualLeave:
+    "लगातार दुई (२) वर्षको सेवा पूरा गरेपछि कर्मचारी ६० दिनको वार्षिक बिदाको हकदार हुनेछ।",
+
+  absence:
+    "कुनै पनि एक (१) दिनको अनधिकृत अनुपस्थितिलाई कम्पनीको अभिलेखमा तीन (३) दिनको रूपमा गणना गरिनेछ।",
+
+  warnings:
+    "तीन (३) आधिकारिक चेतावनी प्राप्त भएपछि कर्मचारीको सेवा समाप्त गरिनेछ।",
+
+  rules:
+    "कम्पनीद्वारा प्रदान गरिएको आवासमा मदिरा सेवन कडाइका साथ निषेध गरिएको छ। मदिरा सेवनसम्बन्धी कुनै पनि उल्लङ्घनमा ५०० दिरहम जरिवाना लगाइनेछ। अरूसँग विवाद सिर्जना गर्ने वा अनुशासनहीन व्यवहार स्वीकार्य हुने छैन र यसमा कम्पनी नीतिअनुसार अनुशासनात्मक कारबाही गरिनेछ।",
+
+  location:
+    "व्यावसायिक आवश्यकताअनुसार कर्मचारीलाई संयुक्त अरब इमिरेट्सभित्र कुनै पनि स्थानमा कार्यका लागि खटाउन सकिनेछ।",
+
+  extraLeave:
+    "६० दिनभन्दा बढी लिइएको कुनै पनि बिदा कर्मचारीको तलबबाट कटौती गरिनेछ वा निरन्तर सेवाको अवस्थामा आगामी बिदाबाट समायोजन गरिनेछ।"
+},
     form: {
       question: "तपाईंको प्रश्न",
       name: "नाम",
@@ -138,24 +166,31 @@ const content = {
       extraLeave: "➕ கூடுதல் விடுப்பு கொள்கை",
       other: "❓ பிற கேள்வி"
     },
-    replies: {
-      timing:
-        "வேலை நேரம் உங்கள் ஸ்டோர் மேனேஜரால் தீர்மானிக்கப்படுகிறது.",
-      holidays:
-        "வார விடுப்பு ஒரு நாள், டீம் லீடர் தீர்மானிப்பார்.",
-      annualLeave:
-        "இரண்டு ஆண்டுகள் பணி முடிந்த பிறகு 60 நாட்கள் ஆண்டு விடுப்பு கிடைக்கும்.",
-      absence:
-        "ஒரு நாள் अनुपस्थिति நிறுவனம் கணக்கில் மூன்று நாட்களாக கருதப்படும்.",
-      warnings:
-        "மூன்று எச்சரிக்கைகள் பிறகு பணிநீக்கம் செய்யப்படும்.",
-      rules:
-        "வசிப்பிடத்தில் மதுபானம் அருந்த அனுமதி இல்லை. மற்றவர்களுடன் பிரச்சனை செய்யக்கூடாது. தாமதமாக வந்தால் 500 திர்ஹாம் கழிக்கப்படும்.",
-      location:
-        "வேலை இடம் ஐக்கிய அரபு அமீரகத்தில் எங்கும் இருக்கலாம்.",
-      extraLeave:
-        "60 நாட்களுக்கு மேல் விடுப்பு எடுத்தால் சம்பளத்தில் அல்லது அடுத்த விடுப்பில் கழிக்கப்படும்."
-    },
+replies: {
+  timing:
+    "வேலை நேரம் செயல்பாட்டு தேவைகளின் அடிப்படையில் ஸ்டோர் மேனேஜரால் நிர்ணயிக்கப்படுகிறது.",
+
+  holidays:
+    "ஊழியருக்கு வாரத்திற்கு ஒரு (1) நாள் விடுப்பு வழங்கப்படும், இது டீம் லீடரால் நிர்ணயித்து அனுமதிக்கப்படும்.",
+
+  annualLeave:
+    "தொடர்ச்சியாக இரண்டு (2) ஆண்டுகள் பணியாற்றிய பிறகு, ஊழியர் 60 நாட்கள் ஆண்டு விடுப்பிற்கு தகுதியுடையவராக இருப்பார்.",
+
+  absence:
+    "அங்கீகாரம் பெறாத ஒரு (1) நாள் अनुपस्थिति, நிறுவன பதிவுகளில் மூன்று (3) நாட்களாக கணக்கிடப்படும்.",
+
+  warnings:
+    "மூன்று (3) அதிகாரப்பூர்வ எச்சரிக்கைகள் வழங்கப்பட்ட பின்னர், ஊழியரின் பணியிடம் நிறுத்தப்படும்.",
+
+  rules:
+    "நிறுவனம் வழங்கிய வசிப்பிடங்களில் மதுபானம் அருந்துவது கடுமையாகத் தடைசெய்யப்பட்டுள்ளது. மதுபானம் தொடர்பான எந்தவொரு மீறலுக்கும் 500 திர்ஹாம் அபராதம் விதிக்கப்படும். பிறருடன் மோதல் ஏற்படுத்துதல் அல்லது ஒழுங்கீனமான நடத்தை ஏற்றுக்கொள்ளப்படாது மற்றும் நிறுவனக் கொள்கையின்படி ஒழுக்க நடவடிக்கை எடுக்கப்படும்.",
+
+  location:
+    "வணிக தேவைகளின் அடிப்படையில், ஊழியர் ஐக்கிய அரபு அமீரகத்தின் எந்த இடத்திலும் பணியமர்த்தப்படலாம்.",
+
+  extraLeave:
+    "60 நாட்களை மீறும் எந்தவொரு விடுப்பும், ஊழியரின் சம்பளத்திலிருந்து கழிக்கப்படும் அல்லது தொடர்ச்சியான பணியின் பட்சத்தில் அடுத்த தகுதி வாய்ந்த விடுப்புடன் சமநிலைப்படுத்தப்படும்."
+},
     form: {
       question: "உங்கள் கேள்வி",
       name: "பெயர்",
