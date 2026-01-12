@@ -351,6 +351,13 @@ function showForm(questionText = "") {
       return;
     }
 
+    // ✅ تحقق من رقم الهاتف الإماراتي (971XXXXXXXXX فقط)
+    const uaePhoneRegex = /^971\d{9}$/;
+    if (!uaePhoneRegex.test(phone)) {
+      alert("⚠️ Invalid UAE phone number\nExample: 971501234567");
+      return;
+    }
+
     // ✅ تحقق من رقم الهوية الإماراتية
     const emiratesIdRegex = /^784-\d{11}-\d$/;
     if (!emiratesIdRegex.test(id)) {
