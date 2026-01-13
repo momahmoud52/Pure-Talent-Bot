@@ -37,7 +37,7 @@ const content = {
         "• The value of any violation penalty will be determined by company management.\n" +
         "• Violations may result in penalties up to and including termination.",
       location: "Employees may be assigned to any work location within the UAE as per business needs.",
-      extraLeave: "Any leave exceeding sixty (60) days will be deducted from salary or adjusted against future leave."
+     extraLeave: "After completing two (2) years of service, the employee is entitled to sixty (60) days of annual leave. Any leave exceeding this will be calculated and managed in accordance with company policy."
     },
     form: {
       question: "Your Inquiry",
@@ -79,7 +79,7 @@ const content = {
         "• देर से आने पर कार्रवाई होगी।\n" +
         "• किसी भी दंड की राशि कंपनी तय करेगी।",
       location: "कार्य स्थान आवश्यकतानुसार बदला जा सकता है।",
-      extraLeave: "60 दिन से अधिक अवकाश वेतन से काटा जाएगा।"
+extraLeave: "दो (2) वर्ष की सेवा पूरी करने के बाद कर्मचारी को 60 दिनों का वार्षिक अवकाश मिलेगा। इससे अधिक ली गई किसी भी छुट्टी की गणना कंपनी की नीति के अनुसार की जाएगी।"
     },
     form: {
       question: "आपकी पूछताछ",
@@ -119,7 +119,7 @@ const content = {
         "• बाहिरी व्यक्तिलाई आवासमा अनुमति छैन।\n" +
         "• कम्पनीले जरिवानाको मूल्य निर्धारण गर्नेछ।",
       location: "UAE भित्र कार्य स्थान परिवर्तन हुन सक्छ।",
-      extraLeave: "६० दिनभन्दा बढी बिदा तलबबाट कटौती हुनेछ।"
+      extraLeave: "सेवाको दुई (2) वर्ष पूरा गरेपछि कर्मचारीले ६० दिनको वार्षिक बिदा पाउनेछ। सोभन्दा बढी लिइने कुनै पनि बिदा कम्पनीको नीति अनुसार गणना गरिनेछ।"
     },
     form: {
       question: "तपाईंको सोधपुछ",
@@ -159,7 +159,7 @@ const content = {
         "• வெளிநபர்களுக்கு அனுமதி இல்லை。\n" +
         "• அபராத மதிப்பை நிறுவனம் தீர்மானிக்கும்。",
       location: "UAE முழுவதும் பணியிடம் மாற்றப்படலாம்。",
-      extraLeave: "60 நாட்களுக்கு மேற்பட்ட விடுப்பு சம்பளத்தில் இருந்து கழிக்கப்படும்。"
+      extraLeave: "இரண்டு (2) ஆண்டுகள் சேவையை முடித்த பிறகு, பணியாளருக்கு 60 நாட்கள் ஆண்டு விடுப்பு வழங்கப்படும். அதனை மீறி எடுக்கப்படும் எந்த விடுப்பும் நிறுவனக் கொள்கையின் படி கணக்கிடப்படும்."
     },
     form: {
       question: "உங்கள் விசாரணை",
